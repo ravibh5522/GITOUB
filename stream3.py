@@ -19,7 +19,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 if "chat_titles" not in st.session_state:
     st.session_state.chat_titles = {}
-
+history=[]
 # --- Function to send message to API ---
 def send_message_to_api(query, history):
     api_endpoint = f"{API_BASE_URL}/chat"

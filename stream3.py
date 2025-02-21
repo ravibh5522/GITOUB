@@ -8,7 +8,9 @@ logging.basicConfig(level=logging.DEBUG)
 
 # API Base URL
 API_BASE_URL = "https://llmchatwithimg-1073743898611.us-central1.run.app"
+API_BASE_URL="http://127.0.0.1:5000"
 IMAGE_DB_URL = "https://storage.googleapis.com/llmimages/"
+
 
 # --- Session State Management ---
 if "chat_history" not in st.session_state:

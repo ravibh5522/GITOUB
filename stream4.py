@@ -13,7 +13,7 @@ def get_api_response(payload: dict, api_endpoint: str) -> dict:
 
 def main():
     # Set the page configuration with the roll number as the title
-    roll_number = "ABCD123"
+    roll_number = "Bajaj finserve project @ Ravi Kumar 22bcs10709" 
     st.set_page_config(page_title=roll_number, layout="wide")
     st.title(roll_number)
     
@@ -21,7 +21,7 @@ def main():
     st.markdown("Example: `{ \"data\": [\"A\", \"C\", \"z\"] }`")
     
     # Retrieve API endpoint from secrets, or use default
-    API_ENDPOINT = "http://localhost:5000/bfhl"
+    API_ENDPOINT = "https://finserv-mu.vercel.app/bfhl"
     
     # Initialize session state to store the API response
     if "result" not in st.session_state:

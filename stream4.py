@@ -3,7 +3,7 @@ import requests
 import json
 
 # API URL
-api_url = "https://llmchat-882701280393.us-central1.run.app/chat"
+api_url = "https://marinewithoutimg-882701280393.us-central1.run.app/chat"
 
 st.title("💬 LLM Chatbot")
 

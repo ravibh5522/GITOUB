@@ -1,2 +1,7 @@
 Flask
 Flask-Cors
+streamlit
+plotly
+pandas
+requests
+python-dotenv

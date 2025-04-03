@@ -69,4 +69,8 @@ with st.sidebar:
     - hosted on Google Cloud Run
     - optimized for real-time text generation
     """)
-    st.write("Version: 1.0")
+    # github link ravibh5522
+    st.markdown("[GitHub Profile](www.github.com/ravibh5522)")
+    # linkedin link ravibh5522
+    st.markdown("[LinkedIn Profile](https://www.linkedin.com/in/ravibh5522/)")
+    st.write("Version: 1.2")

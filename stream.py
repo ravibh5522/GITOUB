@@ -2,7 +2,6 @@ import streamlit as st
 import requests
 
 # Flask API URL
-
 FLASK_API_URL = "https://hackathonapi-882701280393.us-central1.run.app/analyze"  # Change this to the deployed API URL if hosted externally
 
 def fetch_mcqs(job_desc):

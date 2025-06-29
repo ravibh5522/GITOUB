@@ -175,8 +175,8 @@ if prompt := st.chat_input("Ask me anything"):
 
                         if api_response_history:
                             st.session_state.chat_history[current_chat_id] = [
-                                {"role": msg["role"], "content": msg["parts"][0] if isinstance(msg["parts"], list) and msg["parts"] else ""}
-                                for msg in api_response_history
+                                {"role": msg.get("role", ""), "content": msg.get("parts", [""])[0] if isinstance(msg.get("parts", []), list) and msg.get("parts", []) else ""}
+                                for msg in api_response_history if isinstance(msg, dict)
                             ]
                             print("\n--- st.session_state.chat_history UPDATED ---") # Debugging print
                             print("Updated st.session_state.chat_history:", st.session_state.chat_history) # Debugging print

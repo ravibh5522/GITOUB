@@ -4,7 +4,7 @@ import json
 
 # --- Configuration ---
 # URL of your Flask backend API
-API_URL = "http://127.0.0.1:5000/chat"
+API_URL = "https://askbhimup-559132211786.europe-west1.run.app/chat"  # Update with your actual API URL
 
 # --- Helper Function to Call API ---
 def call_chat_api(query: str, history: list):
